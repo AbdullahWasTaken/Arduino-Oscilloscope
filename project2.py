@@ -36,6 +36,6 @@ while (True):
         cnt = cnt+1
         cnt1=cnt1+1
     if(cnt>50):
-        val.pop(0)#keep the plot fresh by deleting the data at position 0
+        val.pop(0)#delete the element at position 0 to ensure that the space taken by the plot doesn't exceed 50 units on the z-axis. It also gives an illusion of movement of the wave due to persistence of vision
     if(cnt1>50):
         val1.pop(0)
